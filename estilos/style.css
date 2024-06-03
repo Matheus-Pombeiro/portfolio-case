@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #444444;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+header, footer {
+    background-color: white;
+}
+
+header nav {
+    padding: .5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+header nav a img {
+    height: 3.5rem;
+}
+
+main {
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+main h1 {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+main section {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+main section h2 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+main section p {
+    color: white;
+    font-size: 1.1rem;
+    text-indent: 1.5rem;
+    text-align: justify;
+}
+
+main section img {
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;  
+}
+
+main section ul {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+main section ul li {
+    color: white;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+footer {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -5rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+footer p a {
+    text-decoration: none;
+    color: black;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    
+    main {
+        width: 80%;
+    }
+
+    footer {
+        bottom: 0;
+    }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    main {
+        width: 100%;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+    }
+
+    main section {
+        width: 45%;   
+    }
+
+    main section h2 {
+        font-size: 2.1rem;
+    }
+    
+    main section p {
+        font-size: 1.3rem;
+        text-indent: 2.3rem;
+    }
+
+    .sobre-mim {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    main section ul {
+        width: 70%;
+        gap: 1.2rem;
+    }
+    
+    main section ul li {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        bottom: -4rem;
+    }
+
+}
