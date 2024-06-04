@@ -1,3 +1,5 @@
+/* Estilizações Gerais */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,21 +12,48 @@ body {
     position: relative;
 }
 
-header, footer {
+/* Header */
+
+header {
+    padding: .5rem .3rem;
     background-color: white;
+    box-sizing: border-box;
+}
+
+header button {
+    margin-left: auto;
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+header button img {
+    height: 3rem;
 }
 
 header nav {
+    width: 100%;
     padding: .5rem 0;
-    display: flex;
+    background-color: white;
+    display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.2rem;
+    z-index: 2;
+    position: absolute;
+    left: 0;
 }
 
-header nav a img {
-    height: 3.5rem;
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-bottom: 1px solid gray;
 }
+
+/* Main */
 
 main {
     width: 100%;
@@ -190,9 +219,12 @@ section form fieldset textarea:focus {
     border-color: rgba(32, 32, 255, 0.404);
 }
 
+/* Footer */
+
 footer {
     width: 100%;
     height: 3.5rem;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,6 +249,8 @@ footer p a:hover {
 .contato-footer {
     bottom: 0;
 }
+
+/* Media Queries */
 
 @media screen and (min-width: 768px) {
     
@@ -245,6 +279,31 @@ footer p a:hover {
 
 
 @media screen and (min-width: 1280px) {
+
+    header {
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header button {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    header nav a {
+        border-color: white;
+    }
+
+    header nav a:hover {
+        border-color: gray;
+    }
 
     main {
         width: 100%;
